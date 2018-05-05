@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>피부외상 진단	</title>
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script type="text/javascript">
+		window.onload=function(){
+			var nav1 = document.getElementById('nav1');
+			nav1.addEventListener("mouseover", function(){
+				var child = this.querySelector("div");
+				child.style.display = "block"
+			});
+			var nav1 = document.getElementById('nav1');
+			nav1.addEventListener("mouseleave", function(){
+				var child = this.querySelector("div");
+				child.style.display = "none"
+			});
+		}
+	</script>
+</head>
+<body>
+	<div id="bigbox">
+		<header>
+			<div class="logo">
+				<img src="logo.png"><!--로고이미지url이 들어갑니다. -->
+			</div>
+			
+			<h1>A_TEAM RESULT</h1>
+		</header>
+		<div class="nav">
+			<ul>
+				<li id="nav1">
+					<a href="#">로그인/회원가입</a>
+					<div>
+						<a href="로그인url주소">로그인</a>
+						<a href="C:\Users\HusnSooKim\Desktop\회원가입.html">회원가입</a>
+					</div>
+				</li>
+				<li id="nav2">
+					<a href="질병 확인하기 url">질병확인하기</a>
+				</li>
+				<li id="nav3">
+					<a href="병원예약 url">병원 예약하기</a>
+				</li>
+			</ul>
+		</div>
+		<section>
+			메인내용
+		</section>
+		<aside>
+			sub내용
+		</aside>
+		<footer>
+			Copyright &copy; 2018 A_TEAM RESULT PAGE.
+		</footer>
+	</div>
+</body>
+</html>
