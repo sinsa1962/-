@@ -33,7 +33,20 @@ h1{
 section, aside{padding: 10px 10px;margin-top:50px;float:left;min-height : 500px;opacity:0.9;}
 section{width:70%;background-color:red; margin-right:5px;}
 aside{width:23%;background-color:yellow;}
-
+.login_box{
+	width:400px;
+	height:150px;
+	padding: 45px;
+	margin: 100px auto;
+}
+.login_box h2{font-size:18px; clear:both; display:block; padding-bottom:10px;}
+.login_box .inputArea{width:300px; height:55px; float:left;}
+.login_box .inputArea input{width:300px; height:25px; box-sizing:border-box; line-height:25px; padding-left:5px; border:0px none; display:block; background:#666;}
+.login_box .inputArea input::placeholder{color:white}
+.login_box .inputArea input[type=password]{margin-top:5px;}
+.login_box .inputArea input:focus{background:#333; color:white;}
+.login_box .buttonArea{float:left; width:55px; height:55px; margin-left:5px;}
+.login_box .buttonArea button{background:black; cursor:pointer; width:55px; height:55px; line-height:55px; border:0px none; color:white; font-weight:bold;}
 footer{clear:both;padding:10px 10px; border-top:1px solid #ccc; background:rgba(0,0,0,0.8); color:white;position: relative;}
 table{
 	height: 500px;
