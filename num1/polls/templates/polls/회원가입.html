@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원가입	</title>
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<script type="text/javascript">
+			window.onload=function(){
+				var nav1 = document.getElementById('nav1');
+				nav1.addEventListener("mouseover", function(){
+					var child = this.querySelector("div");
+					child.style.display = "block"
+				});
+				var nav1 = document.getElementById('nav1');
+				nav1.addEventListener("mouseleave", function(){
+					var child = this.querySelector("div");
+					child.style.display = "none"
+				});
+			}
+		</script>
+</head>
+<body>
+	<div id="bigbox">
+		<header>
+			<div class="logo">
+				<a href="C:\Users\HusnSooKim\Desktop\main.html">
+				<img src="logo.png"><!--로고이미지url이 들어갑니다. -->
+				</a>
+			</div>
+			
+			<h1>A_TEAM RESULT</h1>
+		</header>
+		<div class="nav">
+			<ul>
+				<li id="nav1">
+					<a href="#">로그인/회원가입</a>
+					<div>
+						<a href="C:\Users\HusnSooKim\Desktop\로그인.html">로그인</a>
+						<a href="C:\Users\HusnSooKim\Desktop\회원가입.html">회원가입</a>
+					</div>
+				</li>
+				<li id="nav2">
+					<a href="C:\Users\HusnSooKim\Desktop\진단.html">질병확인하기</a>
+				</li>
+				<li id="nav3">
+					<a href="C:\Users\HusnSooKim\Desktop\예약.html">병원 예약하기</a>
+				</li>
+			</ul>
+		</div>
+		<section style="width:100%;margin:40 auto; background-color: white;">
+			<form id="new" method="get">
+			<table>
+				<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id"></td>
+				<td><input type="button" id="same" value="중복확인"></td>
+				</tr>
+				<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pwd"></td>
+				</tr>
+				<tr>
+				<td>비밀번호 확인</td>
+				<td><input type="password" name="pwd2"></td>
+				</tr>
+				<tr>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="number"></td>
+				</tr>
+				<tr>
+				<td>생년월일</td>
+				<td><input type="date" id="birth" name="birth"></td>
+				</tr>
+				<tr>
+				<td>성별</td>
+				<td><input type="radio" name="sex" value="male">남자<input type="radio" name="sex" value="female">여자</td>
+				</tr>
+				<tr>
+				<td>이메일</td>
+				<td><input type="text" name="email">@
+				<select name="mail">
+				<option value="naver">naver.com</option>
+				<option value="daum">hanmail.net</option>
+				<option value="google">gmail.com</option>
+				</select></td>
+				</tr>
+				<tr>
+				<td>앓고있는 질병</td>
+				<td><input type="text", name="disease"></td>
+				</tr>
+				<tr>
+				<td>개인정보이용에 동의하십니까?</td>
+				<td><input type="radio" name="agreement" value="yes">예<input type="radio" name="agreement" value="no">아니오</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+				<input type="submit" id="sign" value="완료">
+				<input type="button" id="back" value="돌아가기" onclick="location.href='file:///C:/Users/HusnSooKim/Desktop/main.html'">
+				</td>
+				</tr>
+				</table>
+			</form>			
+		</section>
+		<footer>
+			Copyright &copy; 2018 A_TEAM RESULT PAGE.
+		</footer>
+	</div>
+</body>
+</html>
