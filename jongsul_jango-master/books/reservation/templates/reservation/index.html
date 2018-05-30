@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+
+<!-- 예약 폼 -->
+{% block content%}
+
+        <form method="post" action="{% url 'reservation:reservation_result' %}" id="thisform"  style="margin-right : 70%; background-color: white;">
+          {% csrf_token %}
+         {{ form.as_p }}
+            <input type="submit" value="예약하기" />
+        </form>
+
+{% endblock content %}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% block css %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/base_css.css' %}"/>
+{% endblock css %}
+
+    <meta charset="UTF-8">
+    <title>{% block title %}hello A_Team{% endblock %}</title>
+
+    {% block login_script %}
+
+    {% endblock login_script %}
+
+</head>
+<body>
+
+        <header>
+			<div class="logo">
+                <a href="/">
+				<img src="{% static 'images/logo.png' %}"><!--로고이미지url이 들어갑니다. -->
+				</a>
+			</div>
+
+			<h1>A_TEAM RESULT</h1>
+		</header>
+
+    <div id="sidebar">
+        {% block sidebar %}
+             <div class="nav">
+			<ul>
+				<li id="nav1">
+					<a href="#">로그인/회원가입</a>
+					<div>
+						<a href="/">로그인</a>
+						<a href="/">회원가입</a>
+					</div>
+				</li>
+				<li id="nav2">
+					<a href="/">질병확인하기</a>
+				</li>
+				<li id="nav3">
+					<a href="/">병원 예약하기</a>
+				</li>
+			</ul>
+		</div>
+        {% endblock %}
+    </div>
+	{% if user.username %}
+
+<h4 align="right">{{user.username}} 님 반갑습니다.</h4>
+
+{% else %}
+
+<h4 align="right"><a href="/accounts/login">로그인</a>하세요</h4>
+
+{% endif %}
+    <section id="content" style="background-color: white">
+        {% block content %}
+
+        {% endblock content %}
+    </section>
+	<aside id="side">
+		{% block side %}
+		<li>
+			<a href="reservation_result"> 마이페이지</a>
+		</li>
+		<li>
+			<a>예약</a>
+		</li>
+		{% endblock side %}
+	</aside>
+<footer>
+			Copyright &copy; 2018 A_TEAM RESULT PAGE.
+</footer>
+
+</body>
+</html>
